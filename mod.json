@@ -1,0 +1,59 @@
+{
+	"geode": "5.0.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "yourname.input-indicator",
+	"name": "Input Indicator",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "Shows P1 / P2 input boxes with CPS and total clicks during levels.",
+	"tags": ["gameplay", "interface", "utility"],
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Show Indicator",
+			"default": true
+		},
+		"scale": {
+			"type": "float",
+			"name": "Scale",
+			"default": 1.0,
+			"min": 0.4,
+			"max": 2.0,
+			"control": { "slider": true }
+		},
+		"opacity": {
+			"type": "int",
+			"name": "Opacity",
+			"default": 200,
+			"min": 20,
+			"max": 255,
+			"control": { "slider": true }
+		},
+		"pos-x": {
+			"type": "float",
+			"name": "Position X (% of screen)",
+			"default": 12.0,
+			"min": 0.0,
+			"max": 100.0,
+			"control": { "slider": true }
+		},
+		"pos-y": {
+			"type": "float",
+			"name": "Position Y (% of screen)",
+			"default": 80.0,
+			"min": 0.0,
+			"max": 100.0,
+			"control": { "slider": true }
+		},
+		"reset-on-attempt": {
+			"type": "bool",
+			"name": "Reset Counts On New Attempt",
+			"default": false
+		}
+	}
+}
